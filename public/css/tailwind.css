@@ -592,6 +592,10 @@ video {
   border-width: 0;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -1305,7 +1309,7 @@ video {
   --tw-text-opacity: 1;
   color: rgb(236 72 153 / var(--tw-text-opacity));
   margin: 1rem;
-  word-break: break-all;
+  overflow-wrap: break-word;
   font-size: 1.125rem;
   line-height: 1.75rem;
   line-height: 1.625;
