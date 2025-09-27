@@ -1,0 +1,47 @@
+#
+
+training:
+   1:
+      title: "Kinder / Jugend"
+      description: "Unsere Kinder- und Jugendgruppen werden bei dem Alter von 12 Jahren getrennt. Kinder mit bestandenem Level 8 Kurs können in der Kindergruppe einsteigen und wechseln mit 12 Jahren in die Jugendgruppe."
+      time: 
+         -  day: Dienstag 
+            sommer: "18:00 - 19:00"
+            winter: "18:00 - 19:00"
+            note: "jugend 1"
+         -  day: Freitag 
+            sommer: "18:30 - 19:30"
+            winter: "19:00 - 20:00"
+            note: "jugend 1"
+         -  day: ""  
+            sommer: "19:00 - 20:00"
+            winter: "19:30 - 20:30"
+            note: "jugend 2"
+
+      trainer: "Lea Tschanz"
+      notice: "Leider Voll"
+      color: "bg-amber-100"
+   2:
+      title: "Erwachsene"
+      description: "Erwachsenengruppe von 16-35. Eine gemischte fröhliche Gruppe, die gemeinsam schwimmt, Techniken verfeinert und sich fit hält."
+      time:
+         -  day: Dienstag 
+            sommer: "18:00 - 19:00"
+            winter: "18:00 - 19:00"
+            note: ""
+      trainer: "Thomas Messer"
+      notice: "Leider Voll"
+      color: "bg-amber-200"
+
+
+   3:
+      title: "Fitness"
+      description: "Fitness schwimmen, die Schwimmgruppe für Erwachsene, die sich mit Schwimmen fit halten möchten."
+      time: 
+         -  day: Dienstag 
+            sommer: "18:00 - 19:00"
+            winter: "18:00 - 19:00"
+            note: ""
+      trainer: "Vreni Messer"
+      notice: "Leider Voll"
+      color: "bg-amber-300"

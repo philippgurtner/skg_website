@@ -1,0 +1,222 @@
+{% macro team_pictures(people) %}
+
+<div class="flex flex-wrap justify-center">
+    {% for member in people %}
+    <div class="w-6/12 md:w-3/12 lg:w-2/12 lg:mb-0 mb-12 px-4"> <!-- Person Card -->
+        <div class="px-6">
+            <img  src={{member.image}} alt="" class="shadow-lg rounded-full mx-auto max-w-120-px"/>
+                <div class="pt-6 text-center">  
+                    <h5 class="text-xl font-bold">{{member.name}}</h5>
+                    <p class="mt-1 text-sm uppercase font-semibold"> {{member.function}} </p>
+                    {% if member.email %} <a class="break-all" href="mailto:{{member.email}}">{{member.email}}</a> {%endif%}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endmacro %}
+
+
+{% macro training_card(training) %}
+
+<div class="w-full lg:w-3/12 p-4 text-center shadow-lg rounded-lg {{training.color}} markdown">
+    <h3> {{training.title}} </h3>
+    <p class="text-left"> {{training.description}} </p>
+    <table class="w-full text-left align-text-top my-3">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Sommer</th>
+            <th>Winter</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for x in training.time %}
+            <tr>
+                <td>{{x.day}}</td>
+                <td>{{x.sommer}}</td>
+                <td>{{x.winter}}</td>
+              </tr>
+            {% endfor %}
+        </tbody>
+        </table>
+        <p class="text-left">Trainer: {{training.trainer}}</p>
+    </div>
+{% endmacro %}
+
+{% macro course_accordion_ohne_pfeil(courses) %}
+
+{% for course in courses %}
+  <details class="w-full max-w-full box-border border-2 border-blue-400 px-4 py-2 shadow-inner rounded-lg overflow-hidden">
+    <summary class="text-lg py-2 cursor-pointer break-words">{{ course.badge }}: {{ course.thema }}</summary>
+    <div class="space-y-2 break-words">
+      <h4 class="font-semibold">Thema:</h4>
+      <p>{{ course.thema }}</p>
+      <h4 class="font-semibold">Inhalte:</h4>
+      <ul class="list-disc pl-5">
+        {% for i in course.inhalte %}
+          <li class="break-words">{{ i }}</li>
+        {% endfor %}
+      </ul>
+      <h4 class="font-semibold">Voraussetzungen:</h4>
+      <p>{{ course.voraussetzungen }}</p>
+    </div>
+  </details>
+{% endfor %}
+
+{% endmacro %}
+
+{% macro course_accordion(courses) %}
+
+{% for course in courses %}
+    <details class="group w-full max-w-full box-border border-2 border-blue-400 px-4 py-2 shadow-inner rounded-lg overflow-hidden">
+    <summary class="flex items-center justify-between text-lg py-2 cursor-pointer break-words">
+      <span>{{ course.badge }}: {{ course.thema }}</span>
+      <svg class="w-5 h-5 transition-transform duration-200 group-open:rotate-180"
+           fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19 9l-7 7-7-7" />
+      </svg>
+    </summary>
+    <div class="space-y-2 break-words">
+      <h4 class="font-semibold">Thema:</h4>
+      <p>{{ course.thema }}</p>
+      <h4 class="font-semibold">Inhalte:</h4>
+      <ul class="list-disc pl-5">
+        {% for i in course.inhalte %}
+          <li class="break-words">{{ i }}</li>
+        {% endfor %}
+      </ul>
+      <h4 class="font-semibold">Voraussetzungen:</h4>
+      <p>{{ course.voraussetzungen }}</p>
+    </div>
+  </details>
+{% endfor %}
+
+{% endmacro %}
+
+
+{% macro landing_card(card) %}
+<div class="w-10/12 md:w-4/12 px-4 text-center"> 
+        <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+        <a href="{{card.link}}">
+        <div class="px-4 py-5 flex-auto">
+            <h6 class="text-xl font-semibold">{{card.title}}</h6>
+            <p class="mt-2 mb-0 md:mb-0">
+            {{card.text}}
+            </p>
+        </div>
+        </a>
+        </div>
+    </div>
+
+{% endmacro name %}
+
+
+
+
+{% macro colorhotfix() %}
+<div class="
+bg-amber-100
+bg-amber-200
+bg-amber-300
+"></div>
+{% endmacro %}
+
+
+
+
+{% macro kurse_select(data) %}{# If we don't want spacing in the HTML, we cant have spacing in th makro...#}
+<option value="-">Kurs</option>{% for i in data.records  | sort(attribute="1") %}{% if not i[4] | int %}{# Seems to be that shitty.. #}{# "course","level","day","time","full" #}
+<option value="{{ i[0] }}">Level: {{ i[1] }}, {{ i[2] }}; {{ i[3] }} </option> {% endif %}{% endfor %}
+{% endmacro %}
+
+
+
+
+{% macro kurse_time(data) %}
+
+    {% set sorted_data = data.records | sort(attribute="1") %}
+
+    {# Initialize empty arrays for each level #}
+    {% set_global level = [] %}
+    
+    {% set_global level1 = [] %}
+    {% set_global level2 = [] %}
+    {% set_global level3 = [] %}
+    {% set_global level4 = [] %}
+    {% set_global level5 = [] %}
+    {% set_global level6 = [] %}
+    {% set_global level7 = [] %}
+    {% set_global level8 = [] %}
+    {# Add more levels as needed #}
+
+    {# Loop through the sorted data and organize it into separate arrays based on the "level" field #}
+    {% for row in sorted_data %}
+        {% set day = row[2] %}
+        {% if   day == "Montag" %}     {% set day = 1 %} 
+        {% elif day == "Dienstag" %}   {% set day = 2 %}
+        {% elif day == "Mittwoch" %}   {% set day = 3 %}
+        {% elif day == "Donnerstag" %} {% set day = 4 %}
+        {% elif day == "Freitag" %}    {% set day = 5 %}
+        {% elif day == "Samstag" %}    {% set day = 6 %}
+        {% elif day == "Sonntag" %}    {% set day = 7 %}
+        {% endif %}
+    
+        {% set row = row | concat(with=day) %}
+        {% set level = row[1] %}
+        {% if level == "1" %}
+            {% set_global level1 = level1 | concat(with=[row]) %}
+        {% elif level == "2" %}
+            {% set_global level2 = level2 | concat(with=[row]) %}
+        {% elif level == "3" %}
+            {% set_global level3 = level3 | concat(with=[row]) %}
+        {% elif level == "4" %}
+            {% set_global level4 = level4 | concat(with=[row]) %}
+        {% elif level == "5" %}
+            {% set_global level5 = level5 | concat(with=[row]) %}
+        {% elif level == "6" %}
+            {% set_global level6 = level7 | concat(with=[row]) %}
+        {% elif level == "7" %}
+            {% set_global level7 = level7 | concat(with=[row]) %}
+        {% elif level == "8" %}
+            {% set_global level8 = level8 | concat(with=[row]) %}
+        {# Add more conditions for additional levels #}
+        {% endif %}
+    {% endfor %}
+
+
+    {# Sort arrays by weekday and time #}
+
+    {% set level1_sorted = level1 | sort(attribute="5") | sort(attribute="3") %}        {# 5: day in week, 3: time#}
+    {% set level2_sorted = level2 | sort(attribute="5") | sort(attribute="3") %}
+    {% set level3_sorted = level3 | sort(attribute="5") | sort(attribute="3") %}
+    {% set level4_sorted = level4 | sort(attribute="5") | sort(attribute="3") %}
+    {% set level5_sorted = level5 | sort(attribute="5") | sort(attribute="3") %}
+    {% set level6_sorted = level6 | sort(attribute="5") | sort(attribute="3") %}
+    {% set level7_sorted = level7 | sort(attribute="5") | sort(attribute="3") %}
+    {% set level8_sorted = level8 | sort(attribute="5") | sort(attribute="3") %}
+
+    {# Add more sorted arrays for additional levels #}
+
+    {# Output the sorted arrays #}
+
+        <div class="w-full flex flex-wrap mt-10">
+           <div class="w-full md:w-6/12 lg:w-4/12 mb-5"> <p>Level1</p> <ul class="list-disc list-inside"> {% for x in level1_sorted %} <li class=" {% if x[4] == "1" %} text-red-700 line-through {% endif %} "> {{x[2]}}: {{x[3]}}</li> {% endfor %}  </ul> </div>
+           <div class="w-full md:w-6/12 lg:w-4/12 mb-5"> <p>Level2</p> <ul class="list-disc list-inside"> {% for x in level2_sorted %} <li class=" {% if x[4] == "1" %} text-red-700 line-through {% endif %} "> {{x[2]}}: {{x[3]}}</li> {% endfor %}  </ul> </div>
+           <div class="w-full md:w-6/12 lg:w-4/12 mb-5"> <p>Level3</p> <ul class="list-disc list-inside"> {% for x in level3_sorted %} <li class=" {% if x[4] == "1" %} text-red-700 line-through {% endif %} "> {{x[2]}}: {{x[3]}}</li> {% endfor %}  </ul> </div>
+           <div class="w-full md:w-6/12 lg:w-4/12 mb-5"> <p>Level4</p> <ul class="list-disc list-inside"> {% for x in level4_sorted %} <li class=" {% if x[4] == "1" %} text-red-700 line-through {% endif %} "> {{x[2]}}: {{x[3]}}</li> {% endfor %}  </ul> </div>
+           <div class="w-full md:w-6/12 lg:w-4/12 mb-5"> <p>Level5</p> <ul class="list-disc list-inside"> {% for x in level5_sorted %} <li class=" {% if x[4] == "1" %} text-red-700 line-through {% endif %} "> {{x[2]}}: {{x[3]}}</li> {% endfor %}  </ul> </div>
+           <div class="w-full md:w-6/12 lg:w-4/12 mb-5"> <p>Level6</p> <ul class="list-disc list-inside"> {% for x in level6_sorted %} <li class=" {% if x[4] == "1" %} text-red-700 line-through {% endif %} "> {{x[2]}}: {{x[3]}}</li> {% endfor %}  </ul> </div>
+           <div class="w-full md:w-6/12 lg:w-4/12 mb-5"> <p>Level7</p> <ul class="list-disc list-inside"> {% for x in level7_sorted %} <li class=" {% if x[4] == "1" %} text-red-700 line-through {% endif %} "> {{x[2]}}: {{x[3]}}</li> {% endfor %}  </ul> </div>
+           <div class="w-full md:w-6/12 lg:w-4/12 mb-5"> <p>Level8</p> <ul class="list-disc list-inside"> {% for x in level8_sorted %} <li class=" {% if x[4] == "1" %} text-red-700 line-through {% endif %} "> {{x[2]}}: {{x[3]}}</li> {% endfor %}  </ul> </div>
+        </div>
+
+
+    {# Output more sorted arrays for additional levels #}
+
+{% endmacro %}
+
+
+
+

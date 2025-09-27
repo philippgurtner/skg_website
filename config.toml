@@ -1,0 +1,25 @@
+# The URL the site will be built for
+base_url = "https://philippgurtner.ch/skg/"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = false
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+[extra]
+# Put all your custom variables here
+
+color_main="rgb(0 51 255)"
+
+formid      = "AKfycbw4zTJqZvnW2Bdlr_JFjNkEv0V_bof2PX2napPtKxYtbm44oy2_1fgrKhKPHghqrOEfaw"
+formlink    = "https://script.google.com/macros/s/AKfycbw4zTJqZvnW2Bdlr_JFjNkEv0V_bof2PX2napPtKxYtbm44oy2_1fgrKhKPHghqrOEfaw/exec"
+
+
+wave =    '<svg  viewBox="0 0 200 15"> <defs> <pattern id="Wave" x="0" y="0" width="100" height="25" patternUnits="userSpaceOnUse" > <path d="M0 25 0 6C20 9 38 11 55 7 72 4 87 4 100 6l0 19z" id="path4" fill="#9eaffd"/> </pattern> </defs> <rect width="100%" height="100%" fill="url(#Wave)" /> </svg>'
+waveinv = '<svg  viewBox="0 0 200 15" transform="matrix(-1,0,0,-1,0,0)"> <defs> <pattern id="Wave" x="0" y="0" width="100" height="25" patternUnits="userSpaceOnUse" > <path d="M0 25 0 6C20 9 38 11 55 7 72 4 87 4 100 6l0 19z" id="path4" fill="#9eaffd"/> </pattern></defs><rect width="100%" height="100%" fill="url(#Wave)" /> </svg>'

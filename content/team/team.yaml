@@ -1,0 +1,60 @@
+# Team File um alle Leute zu beschreiben
+# es muss folgende Form haben
+
+#leader:
+#  ID:
+#    name: ""
+#    function: ""
+#    email: "OPTIONAL"
+#    image: ""
+
+
+
+
+trainer:
+   -  name: "VRENI MESSER"
+      function: "Gruppen Fitness"
+      image: "https://skgelterkinden.ch/.cm4all/uproc.php/0/Profilbilder/.Vreni_1.jpg/picture-1600?_=16fa60760b8"
+    
+   -  name: "THOMAS MESSER"
+      function: "Gruppen Erwachsene"
+      image: "https://skgelterkinden.ch/.cm4all/uproc.php/0/Profilbilder/.Thomy_1.jpg/picture-1600?_=16fa61d3690"
+   
+   -  name: "LEA TSCHANZ-BROGLI"
+      function: "Gruppen Cheftrainerin, Kinder und Jugend"
+      image: "https://skgelterkinden.ch/.cm4all/uproc.php/0/Profilbilder/.Lea_B_1.jpg/picture-1600?_=16fa6076c70"
+   
+   -  name: "STEFANIE ELLIKER"
+      function: "Gruppen Schwimmsportschule"
+      image: "https://skgelterkinden.ch/.cm4all/uproc.php/0/Profilbilder/.Steffi_1.jpg/picture-1600?_=16fa61d3e60"
+
+leader:
+   -  name: "THOMAS MESSER"
+      function: "Präsident"
+      email: "praesident@skgelterkinden.ch"
+      image: "https://skgelterkinden.ch/.cm4all/uproc.php/0/Profilbilder/.Thomy_1.jpg/picture-2600?_=16fa61d3690"
+   
+   -  name: "LEA HERZOG-SCHIESS"
+      function: "Vizepräsidentin, Aktuarin"
+      email: "aktuar@skgelterkinden.ch"
+      image: "https://skgelterkinden.ch/.cm4all/uproc.php/0/Profilbilder/.Lea_1.jpg/picture-2600?_=16fa61d4a18"
+   
+   -  name: "STEFANIE ELLIKER"
+      function: "Leitung Schwimmsportschule"
+      email: "schwimmsportschule@skgelterkinden.ch"
+      image: "https://skgelterkinden.ch/.cm4all/uproc.php/0/Profilbilder/.Steffi_1.jpg/picture-2600?_=16fa61d3e60"
+   
+   -  name: "SARA BADER"
+      function: "Schwimmsportschule Administratives"
+      email: "kurse@skgelterkinden.ch"
+      image: "https://skgelterkinden.ch/.cm4all/uproc.php/0/Profilbilder/.Sara%20(002)cut.jpg/picture-2600?_=172946c96e0"
+
+   -  name: "EVELYNE GURTNER"
+      function: "Kassierin"
+      email: "kassier@skgelterkinden.ch"
+      image: "https://skgelterkinden.ch/.cm4all/uproc.php/0/Profilbilder/.Evelyne_1.jpg/picture-2600?_=16fa61d4e00"
+
+   -  name: "LEA TSCHANZ-BROGLI"
+      function: "Cheftrainerin"
+      email: "cheftrainer@skgelterkinden.ch"
+      image: "https://skgelterkinden.ch/.cm4all/uproc.php/0/Profilbilder/.Lea_B_1.jpg/picture-2600?_=16fa6076c70"

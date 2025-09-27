@@ -1,0 +1,10 @@
+<div class="w-6/12 md:w-3/12 lg:w-2/12 lg:mb-0 mb-12 px-4"> <!-- Person Card -->
+    <div class="px-6">
+        <img  src={{image}} alt="" class="shadow-lg rounded-full mx-auto max-w-120-px"/>
+            <div class="pt-6 text-center">  
+                <h5 class="text-xl font-bold">{{name}}</h5>
+                <p class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"> {{function}} </p>
+                {% if email %} <a class="break-all" href="mailto:{{email}}">{{email}}</a> {%endif%}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+{%- set site = get_page(path="landing/landing.md") -%}
+
+{%- set heading = site.title | trim -%}
+{%- set content = site.content -%}
+
+
+
+<section class="pb-20 -mt-24">
+
+  {#
+  <div class="flex flex-wrap items-center mt-32"> <!-- Section Leitbild -->
+    <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+      <!-- <div
+           class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white"
+        > -->
+      <div>
+      </div>
+      <h3 class="text-3xl mb-2 font-semibold leading-normal">
+        {{heading}}
+      </h3>
+      <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
+        {{content}}
+      </p>
+    </div>
+    <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+      <img src={{site.extra.motivation_image}} alt="" class="" />
+
+
+
+    </div>
+  </div>
+  
+  </div>
+  #}
+  {#{{config.extra.wave | safe}}#}
+
+</section>

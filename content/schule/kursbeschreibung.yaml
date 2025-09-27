@@ -1,0 +1,94 @@
+# Kursfile für die Beschreibung der Kurse
+# es muss folgende Form haben
+# styles: course, plain # TODO 
+
+course:
+   -  level: "1"
+      badge: "Krebs"
+      thema: "Wassergewöhnung"
+      inhalte: 
+         - Sicherer Sprung in standtiefes Wasser
+         - Ka was
+      voraussetzungen: "keine"
+
+   -  level: "2"
+      badge: "Seepferd"
+      thema: "Gleiten, Beinschlag, Sprung ins Wasser"
+      inhalte: 
+         - Gleiten in Bauch- und Rückenlage ohne Beinbewegung während mindestens fünf Sekunden
+         - Wechselbeinschlag in Bauch- und Rückenlage während fünf Sekunden
+         - Gestreckter Sprung ins Wasser mit angelegten Armen und vollständigem Unterwasser Tauchen
+         - "Freier Sprung ins Wasser: auftauchen ohne den Boden zu berühren und selbständig zum Beckenrand schwimmen"
+      voraussetzungen: "Vorkenntnisse aus dem Kurs 1"
+   
+   -  level: "3"
+      badge: "Frosch"
+      thema: "Beinschlag, Rückenschwimmen"
+      inhalte: 
+         - 10m Wechselbeinschlag in Bauch- und Rückenlage, Arme in Streamline- Position
+         - 10m Wechselbeinschlag mit Drehund von der Bauch- in die Rückenlage und zurück, Arme sind am Körper anliegend
+         - Drei bis vier Zyklen Rücken
+         - Sprung mit passivem Auftauchen 
+      voraussetzungen: "Vorkenntnisse aus dem Kurs 2"
+   
+   -  level: "3"
+      badge: "Frosch"
+      thema: "Beinschlag, Rückenschwimmen"
+      inhalte: 
+         - 10m Wechselbeinschlag in Bauch- und Rückenlage, Arme in Streamline- Position
+         - 10m Wechselbeinschlag mit Drehund von der Bauch- in die Rückenlage und zurück, Arme sind am Körper anliegend
+         - Drei bis vier Zyklen Rücken
+         - Sprung mit passivem Auftauchen 
+      voraussetzungen: "Vorkenntnisse aus dem Kurs 2"
+   -  level: "3"
+      badge: "Frosch"
+      thema: "Beinschlag, Rückenschwimmen"
+      inhalte: 
+         - 10m Wechselbeinschlag in Bauch- und Rückenlage, Arme in Streamline- Position
+         - 10m Wechselbeinschlag mit Drehund von der Bauch- in die Rückenlage und zurück, Arme sind am Körper anliegend
+         - Drei bis vier Zyklen Rücken
+         - Sprung mit passivem Auftauchen 
+      voraussetzungen: "Vorkenntnisse aus dem Kurs 2"
+   -  level: "3"
+      badge: "Frosch"
+      thema: "Beinschlag, Rückenschwimmen"
+      inhalte: 
+         - 10m Wechselbeinschlag in Bauch- und Rückenlage, Arme in Streamline- Position
+         - 10m Wechselbeinschlag mit Drehund von der Bauch- in die Rückenlage und zurück, Arme sind am Körper anliegend
+         - Drei bis vier Zyklen Rücken
+         - Sprung mit passivem Auftauchen 
+      voraussetzungen: "Vorkenntnisse aus dem Kurs 2"
+   -  level: "3"
+      badge: "Frosch"
+      thema: "Beinschlag, Rückenschwimmen"
+      inhalte: 
+         - 10m Wechselbeinschlag in Bauch- und Rückenlage, Arme in Streamline- Position
+         - 10m Wechselbeinschlag mit Drehund von der Bauch- in die Rückenlage und zurück, Arme sind am Körper anliegend
+         - Drei bis vier Zyklen Rücken
+         - Sprung mit passivem Auftauchen 
+      voraussetzungen: "Vorkenntnisse aus dem Kurs 2"
+   -  level: "3"
+      badge: "Frosch"
+      thema: "Beinschlag, Rückenschwimmen"
+      inhalte: 
+         - 10m Wechselbeinschlag in Bauch- und Rückenlage, Arme in Streamline- Position
+         - 10m Wechselbeinschlag mit Drehund von der Bauch- in die Rückenlage und zurück, Arme sind am Körper anliegend
+         - Drei bis vier Zyklen Rücken
+         - Sprung mit passivem Auftauchen 
+      voraussetzungen: "Vorkenntnisse aus dem Kurs 2"
+   -  level: "8"
+      badge: "Frosch"
+      thema: "Beinschlag, Rückenschwimmen"
+      inhalte: 
+         - 10m Wechselbeinschlag in Bauch- und Rückenlage, Arme in Streamline- Position
+         - 10m Wechselbeinschlag mit Drehund von der Bauch- in die Rückenlage und zurück, Arme sind am Körper anliegend
+         - Drei bis vier Zyklen Rücken
+         - Sprung mit passivem Auftauchen 
+      voraussetzungen: "Vorkenntnisse aus dem Kurs 2"
+
+
+
+
+
+
+

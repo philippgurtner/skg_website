@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block helper %} {# En richtige hack, aber ja :)#}
+    {% set landing = false %}
+{% endblock %}
+
+
+{% block firstscreen %}
+
+{% endblock %}
+
+{% block content %}
+<div class="-mt-48">
+  {{ page.content | safe }}
+</div>
+{% endblock content %}

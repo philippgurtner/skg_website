@@ -1,7 +1,8 @@
 # Ignore everything
-/*
-
+public/
+node_modules/
+private_notes.txt
 
 # But not these files...
 !.gitignore
-!public/
+

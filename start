@@ -1,0 +1,1 @@
+npx tailwindcss -i ./style/index.css -o ./static/css/tailwind.css && zola serve

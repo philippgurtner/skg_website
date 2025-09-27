@@ -1,0 +1,109 @@
+npx tailwindcss -i ./style/index.css -o ./static/css/tailwind.css && zola serve
+
+
+Details icon replacement: 
+https://stackoverflow.com/questions/10813581/can-i-replace-the-expand-icon-of-the-details-element
+
+zola: page in multiple pieces:
+https://zola.discourse.group/t/markdown-break-page-into-separate-pieces/77/5
+https://zola.discourse.group/t/include-macro-in-content/1693/5
+
+
+
+M0 2C20 5 39 7 55 3 71-1 87 0 100 2L100 7C87 5 71 4 55 8 39 12 20 10 0 7Z       // Pfad beidweg
+
+
+
+Richtig nices bispiel, au für menu rechts mobile
+https://straffesites.com/en
+
+
+
+
+Tailwind menu, aber nid so richtig....
+https://dev.to/seppegadeyne/crafting-a-mobile-menu-with-tailwind-css-without-javascript-1814
+
+<label class="absolute top-10 right-10 z-40 cursor-pointer px-3 py-6 justify-right bg-red-500" for="mobile-menu">
+          <input class="peer hidden" type="checkbox" id="mobile-menu" />
+          <div class="relative z-50 block h-[1px] w-7 bg-black bg-transparent content-[''] 
+                  before:absolute before:top-[-0.35rem] 
+                  before:z-50 before:block 
+                  before:h-full                 before:w-full 
+                  before:bg-green-500         before:transition-all 
+                  before:duration-200           before:ease-out
+                  before:content-['']           after:absolute 
+                  after:right-0                 after:bottom-[-0.35rem] 
+                  after:block                   after:h-full 
+                  after:w-full                  after:bg-black 
+                  after:transition-all          after:duration-200 
+                  after:ease-out                after:content-[''] 
+                  peer-checked:bg-transparent 
+                  before:peer-checked:top-0 
+                  before:peer-checked:w-full 
+                  before:peer-checked:rotate-45 
+                  before:peer-checked:transform 
+                  after:peer-checked:bottom-0 
+                  after:peer-checked:w-full 
+                  after:peer-checked:-rotate-45 
+                  after:peer-checked:transform" > </div>
+
+          
+          <div class="bg-pink-500 absolute top-0 z-40 
+                     {# h-full w-full #} 
+                      translate-x-full 
+                      overflow-y-auto 
+                      overscroll-y-none
+                      transition 
+                      duration-500 
+                      peer-checked:translate-x-0"
+          >
+              <div class="float-right pb-20 pr-20 bg-white px-6 pt-24 shadow-2xl">
+                  <menu>
+                      <li><a href="/">Home</a></li>
+                      <li><a href="/contact">Contact</a></li>
+                  </menu>
+              </div>
+          </div>
+      </label>
+
+      </div>
+
+
+
+       <!--
+        <div class="container mx-auto px-4 w-full lg:w-[75%] markdown">
+            <h2 class="mt-10 mb-2">{{kursangebot.title | trim}}</h2>
+            <div class="flex flex-wrap justify-center">
+                <div class="w-full lg:w-1/2">
+                    <div class="text-left mt-5">
+                        {{kursangebot.content | safe}}
+                    </div>
+                </div>
+            <div class="w-full lg:w-1/2">
+                {% set kurse = load_data(path="content/schule/kursbeschreibung.yaml") %}
+                <div class="space-y-4">
+                    {{ macros::course_accordion(courses=kurse.course) }}
+                </div>
+            </div>
+        </div>
+        -->
+
+
+            <div class="container px-4 mx-auto w-full lg:w-[75%] markdown">
+            <h2 class="mt-10 mb-2">{{ kursangebot.title | trim }}</h2>
+
+            <div class="flex flex-wrap lg:flex-nowrap justify-between lg:-mx-4">
+                <div class="w-[80%] lg:w-1/2 lg:px-4 min-w-0">
+                    <div class="text-left mt-5">
+                        {{ kursangebot.content | safe }}
+                    </div>
+                </div>
+
+                <div class="w-[80%] lg:w-1/2 lg:px-4 min-w-0">
+                    {% set kurse = load_data(path="content/schule/kursbeschreibung.yaml") %}
+                    <div class="space-y-4">
+                        {{ macros::course_accordion(courses=kurse.course) }}
+                    </div>
+                </div>
+            </div>
+        </div>

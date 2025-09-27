@@ -1,0 +1,181 @@
+{% set verein = get_page(path="verein/verein.md") -%}
+{% set verein_split = verein.content | split(pat="
+<hr />") -%}
+
+
+
+{% set trainings = load_data(path="content/verein/trainings.yaml") %}
+
+{% set aquagym = get_page(path="verein/aquagym.md") -%}
+{% set aquagym_split = aquagym.content | split(pat="
+<hr />") -%}
+
+
+<style>
+  details>summary {
+    list-style-type: none;
+  }
+
+  details>summary::-webkit-details-marker {
+    display: none;
+  }
+</style>
+
+
+<section class="pt-10 bg-blue-50"> {# Verein #}
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap justify-center mb-5">
+      <div class="w-full lg:w-[75%] px-4">
+        <div class="markdown">
+          {{-verein_split.0 | safe }}
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto px-4 lg:pt-10 lg:pb-24">
+      <div class="flex flex-wrap text-center justify-center">
+        <div class="w-full lg:w-[75%] px-4">
+          <div class="markdown">
+            {{- verein_split.1 | safe}}
+          </div>
+        </div>
+      </div>
+
+      {# Insert all the training cards ----------------------------------------------------- #}
+      <div class="flex flex-wrap gap-10 my-12 items-start justify-center">
+        {% for _, train in trainings.training %}
+        {{ macros::training_card(training=train) }}
+        {% endfor %}
+      </div>
+
+      {# Whole Aquagym card --------------------------------------------------------------- #}
+      <div class="flex flex-wrap text-center justify-center">
+        <div class="w-full lg:w-7/12 p-4 text-center shadow-lg rounded-lg bg-blue-200 overflow-x-auto markdown">
+          <h3> {{aquagym.title}} </h3>
+          <div class="text-left">
+            {{- aquagym_split.0 | safe }}
+          </div>
+
+          <div class="flex flex-wrap justify-between ">
+            <div class="w-full md:w-5/12">
+              <div class="text-left">
+                {{- aquagym_split.1 | safe }}
+              </div>
+            </div>
+            <div class="w-full md:w-5/12">
+              <div class="text-left">
+                {{- aquagym_split.2 | safe }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!--   {# Dropdown Mitgleiderbereich / Statuten / Vereinsdinge -------------------------------- #}
+    <div class="container mx-auto flex flex-wrap bg-green-400">
+
+      {# Linker Teil #}
+      <div class="w-full lg:w-8/12 bg-blue-300">
+
+      </div>
+
+      {# Rechter Teil#}
+      <div class="w-full lg:w-4/12">
+        
+        {# Statuten #}
+        <details class="text-center container mx-auto px-4 shadow-lg rounded-lg bg-blue-200 mb-5">
+          <summary class="text-2xl font-semibold text-center pt-4 pb-4">Statuten</summary>
+        </details>
+
+        {# Mitgliederbereich #}
+        <div class="flex justify-center items-center">
+          <a class="block w-full pt-4 pb-4 shadow-lg rounded-lg bg-blue-200 mb-5 text-2xl font-semibold text-center "
+            href=""> Mitgliederbereich </a>
+        </div>
+
+        {# Mitglied werden #}
+        <details class="text-center container mx-auto px-4 shadow-lg rounded-lg bg-blue-200 mb-5">
+          <summary class="text-2xl font-semibold text-center pt-4 pb-4">Mitglied werden</summary>
+          <div class="flex flex-wrap justify-center">
+            <div class="relative flex flex-col min-w-0 break-words w-full mb-6">
+              <div class="flex-auto lg:p-5">
+
+                <p class="">Möchten Sie dem Schwimmklub Gelterkinden beitreten oder Ihr Kind anmelden?
+                <p>
+
+                <table>
+                  <tr>
+                    <th>Aktiv:</th>
+                    <td>CHF 60.-</td>
+                  </tr>
+                  <tr>
+                    <th>Passiv:</th>
+                    <td>CHF 30.-</td>
+                  </tr>
+                  <tr>
+                    <th>Kinder:</th>
+                    <td>CHF 35.-</td>
+                  </tr>
+                </table>
+
+                <p>Wir freuen uns über Ihre Anmeldung</p>
+                <p class="text-red-700">! Keine Anmeldungen für Schwimmkurse !</p>
+
+
+                <div class="relative w-full mb-3 mt-8">
+                  <label class="register_label" for="full-name">Full Name</label>
+                  <input id="full-name" type="text" class="register_box" placeholder="Full Name" />
+                </div>
+                <div class="relative w-full mb-3">
+                  <label class="register_label" for="email">Email</label>
+                  <input id="email" type="email" class="register_box" placeholder="Email" />
+                </div>
+                <div class="relative w-full mb-3">
+                  <label class="register_label" for="message">Message</label>
+                  <textarea id="message" rows="4" cols="80" class="register_box" placeholder="Type a message..."></textarea>
+                </div>
+                <div class="text-center mt-6">
+                  <button
+                    class="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    type="button">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+
+    </div>  {# Dropdown dings#}-->
+  </div>  
+
+ {#
+  <div class="-mt-20">
+    <svg viewBox="0 0 200 15">
+      <defs>
+        <pattern id="Wave1" x="0" y="0" width="100" height="25" patternUnits="userSpaceOnUse">
+          <rect width="100%" height="100%" fill="none" />
+          <path d="M0 25 0 6C20 9 38 11 55 7 72 4 87 4 100 6l0 19z" fill="black" mask="url(#mask)" />
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#Wave1)" />
+    </svg>
+  </div>
+  #}
+
+
+
+  <div class="pt-10">
+    <svg viewBox="0 0 200 6" transform="matrix(-1,0,0,1,0,0)">
+      <defs>
+        <pattern id="Wave2" x="0" y="0" width="100" height="6" patternUnits="userSpaceOnUse">
+          <path d="M0 6 0 2C20 5 39 7 55 3 71-1 87 0 100 2l0 4z" id="path4" fill="rgb(219 234 254" />
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#Wave2)" />
+    </svg>
+  </div>
+</section> {# Verein #}

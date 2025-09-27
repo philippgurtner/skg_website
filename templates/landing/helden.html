@@ -1,0 +1,26 @@
+{%- set site = get_page(path="team/helden.md") -%}
+
+{%- set heading = site.title | trim -%}
+{%- set content = site.content -%}
+
+
+
+<section class="pt-20 pb-20 bg-blue-200 markdown">   <!-- Heroes -->
+    <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-center text-center mb-24">
+            <div class="w-full lg:w-6/12 px-4 markdown">
+                <h1>{{- heading | safe}}</h1>
+                    {{- content | safe }}
+            </div>
+        </div>
+    
+        <h2 class="text-center mt-5 mb-5">Trainer -innen</h2>
+        {% set team = load_data(path="content/team/team.yaml") %}
+        {{ macros::team_pictures(people=team.trainer) }}
+
+    </div>
+    <div class="container mx-auto px-4">
+        <h2 class="text-center mt-5 mb-5">Vorstand</h2>
+        {{ macros::team_pictures(people=team.leader) }}
+    </div>
+</section>

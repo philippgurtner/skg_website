@@ -1,0 +1,7 @@
+<option value="-">Kurs</option>
+{% for i in data.records %}
+    {% if not i[4] | int %}     {# Seems to be that shitty.. #}
+        {# "course","level","day","time","full" #}
+        <option value="{{ i[0] }}">Level: {{ i[1] }}, {{ i[2] }}; {{ i[3] }} </option>
+    {% endif %}
+{% endfor %}

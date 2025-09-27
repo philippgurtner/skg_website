@@ -1,0 +1,18 @@
+.markdown-content {
+    @apply font-serif;
+  }
+  
+  .markdown-content p {
+    @apply mb-5;
+    @apply text-pink-500;
+  }
+  
+  .markdown-content a {
+    @apply text-pink-500;
+  }
+  .markdown-content a:hover {
+    @apply text-pink-400 underline;
+  }
+
+
+  /* rest of the styles */
