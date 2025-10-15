@@ -1,6 +1,7 @@
 ---
 title:  Schwimmsportschule
 template: "page.html"
+render: false
 ---
 
 Seit über 20 Jahren bietet der Schwimmklub Gelterkinden Schwimmkurse für Kinder und Erwachsene in verschiedenen Leistungsstufen an. Die Schwimmsportschule ist ein  wichtiger Eckpfeiler des Vereins. Bei beiden Institutionen handelt es sich um Non- Profit- Organisationen, d.h. der Ertrag aus dem Schulungsbereich fliesst auf direktem Weg in den Schwimmklub Gelterkinden und unterstützt hier die Jugendlichen beim Schwimmsport.

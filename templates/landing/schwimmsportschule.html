@@ -3,15 +3,9 @@
 
 {% set kursangebot = get_page(path="schule/kursangebot.md") -%}
 
-
 {% set kursdaten = get_page(path="schule/kursdaten.md") -%}
-{% set kursdaten_split = kursdaten.content
-| replace(from="§r§", to='<span class="text-red-600">')
-| replace(from="§g§", to='<span class="text-green-600">')
-| replace(from="§b§", to='<span class="text-blue-600">')
-| replace(from="§!§", to="</span>")
-| split(pat="
-<hr />") -%}
+{% set kursdaten_split = macros::custom_coloring(s=kursdaten.content) | split(pat="<hr />") %}
+
 
 
 

@@ -79,24 +79,24 @@
 
 
 
-  .skg_kursdaten table {
-    @apply w-full table-auto text-center;
-  }
+.skg_kursdaten table {
+  @apply w-full table-auto text-center border-spacing-x-6;
+}
 
-  .skg_kursdaten h4 {
-    @apply text-2xl text-center;
-  }
-  .skg_kursdaten h3 {
-    @apply text-xl pt-3 ;
-  }
-
-
+.skg_kursdaten h4 {
+  @apply text-2xl text-left;
+}
+.skg_kursdaten h3 {
+  @apply text-xl pt-3 ;
+}
 
 
-  .register_label{
-    @apply block uppercase tracking-wide text-xs font-bold text-left mb-1;
-  }
-  .register_box{
-    @apply w-full shadow p-3 rounded border-0 bg-white focus:ring focus:outline-none;
-  }
+
+
+.register_label{
+  @apply block uppercase tracking-wide text-xs font-bold text-left mb-1;
+}
+.register_box{
+  @apply w-full shadow p-3 rounded border-0 bg-white focus:ring focus:outline-none;
+}
   

@@ -1,6 +1,7 @@
 +++
 title = "Kursangebot"
 template = "page.html"
+render = false
 +++
 
 

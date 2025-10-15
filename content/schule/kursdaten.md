@@ -1,10 +1,10 @@
 +++
 title = "Kursdaten"
-template = "page.html"
+template = "subpages/kursdaten.html"
 +++
 
 
-<!-- Split, Text 1 Kursdaten -->
+<!-- Split.0 , Text 1 Kursdaten -->
 ### Nächste Kursperioden
 
 - Winter 23/24 (laufend):  21.11.2023 - 09.03.2024
@@ -13,7 +13,7 @@ template = "page.html"
 §r§ **Anmeldungen ab 8. Februar 24 möglich** §!§
 
 ___________________________________________
-<!-- Split, Tabelle (in Box) -->
+<!-- Split.1 , Tabelle (in Box) -->
 
 
 <div class=" mx-auto px-4 mt-5 shadow-lg rounded-lg  overflow-x-auto" >  <!-- Bitte nicht löschen -->
@@ -72,7 +72,7 @@ Fett:
  -->
 
 ____________________________________________
-<!-- Split, Text Anmeldung / Kursdaten -->
+<!-- Split.2 , Text Anmeldung / Kursdaten -->
 
 ## Anmeldung
 

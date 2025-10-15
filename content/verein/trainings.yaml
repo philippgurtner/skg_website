@@ -18,7 +18,8 @@ training:
             winter: "19:30 - 20:30"
             note: "jugend 2"
 
-      trainer: "Lea Tschanz"
+      trainer: "Lea"
+      trainer_gender: "f"
       notice: "Leider Voll"
       color: "bg-amber-100"
    2:
@@ -29,7 +30,8 @@ training:
             sommer: "18:00 - 19:00"
             winter: "18:00 - 19:00"
             note: ""
-      trainer: "Thomas Messer"
+      trainer: "Thomas, Lea"
+      trainer_gender: "mixed"
       notice: "Leider Voll"
       color: "bg-amber-200"
 
@@ -42,6 +44,7 @@ training:
             sommer: "18:00 - 19:00"
             winter: "18:00 - 19:00"
             note: ""
-      trainer: "Vreni Messer"
+      trainer: "Vreni"
+      trainer_gender: "f"
       notice: "Leider Voll"
       color: "bg-amber-300"
