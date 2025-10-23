@@ -1,6 +1,7 @@
 +++
 title = "Kursdaten"
 template = "subpages/kursdaten.html"
+render=false
 +++
 
 
@@ -57,7 +58,8 @@ ___________________________________________
   
 </div>
 
-<!-- Tricks für die Tabelle: 
+<!--{#
+Tricks für die Tabelle: 
 Farben: 
     §red§ TEXT §!§
     gültig ist: 
@@ -69,13 +71,12 @@ Fett:
     ** Text **
 
 *-Zeichen: \* 
- -->
+#}-->
 
 ____________________________________________
 <!-- Split.2 , Text Anmeldung / Kursdaten -->
 
 ## Anmeldung
-
 Die Folgenden Kurse werden im Herbst 2024 Angeboten:\
 <span class="text-red-700 line-through">Gestrichene</span> Daten sind schon ausgebucht. 
 

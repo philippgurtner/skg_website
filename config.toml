@@ -15,6 +15,10 @@ highlight_code = true
 [extra]
 # Put all your custom variables here
 
+asset_prefix = "/skg_website"
+#asset_prefix = ""
+
+
 color_main="rgb(0 51 255)"
 
 formid      = "AKfycbw4zTJqZvnW2Bdlr_JFjNkEv0V_bof2PX2napPtKxYtbm44oy2_1fgrKhKPHghqrOEfaw"

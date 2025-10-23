@@ -2,6 +2,7 @@
 title: "Schwimmklub Gelterkinden"
 sort_by: "date"
 template:  "page.html"
+render: false
 
 extra:
     cards:

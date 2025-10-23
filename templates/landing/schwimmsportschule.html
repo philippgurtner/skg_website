@@ -44,42 +44,20 @@
 
     <hr class="border-t border-gray-300 my-8 w-full">
 
-    <div class="container mx-auto px-4 w-full lg:w-[75%] markdown">
-        <h2>Kursdaten</h2>
-        <div class="flex flex-wrap justify-center">
-            <div class="w-full">
-                <div class="text-left mt-5 markdown">
-                    {{kursdaten_split.0| safe}}
-                </div>
-            </div>
+    <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
 
-            <div class="w-full overflow-x-auto ">
-
-                <div class="">
-                    <!-- Kursdaten  Tabellen laufende Kurse-->
-
-                    {%- set kursdaten = get_page(path="schule/kursdaten.md") -%}
-
-                    <div class="markdown skg_kursdaten">
-                        {{ kursdaten_split.1 | safe }}
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+      <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
 
 
-    <div class="container mx-auto px-4  mt-6 w-full lg:w-[75%] markdown">
-        {{ kursdaten_split.2 | safe }}
-
-        {{ macros::kurse_time(data=load_data(path="/kurs23.csv")) }}
-
-        <div class="flex justify-center items-center">
-            <a class="block w-6/12 pt-4 pb-4 shadow-lg rounded-lg bg-blue-200 mb-5 text-2xl font-semibold text-center "
-                href="schule/anmeldung"> zur Anmeldung </a>
-        </div>
-    </div>
+   
 
     <div class="container mx-auto px-4 w-full lg:w-[75%] markdown">
         <div class="flex flex-wrap justify-center">

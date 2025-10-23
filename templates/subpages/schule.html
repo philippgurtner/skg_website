@@ -1,0 +1,109 @@
+{% extends "subpage.html" %}
+
+
+{% block content %}
+
+{% set schule = get_page(path="schule/schwimmsportschule.md") -%}
+{% set schule_split = schule.content | split(pat="
+<hr />") -%}
+
+{% set kursangebot = get_page(path="schule/kursangebot.md") -%}
+
+{% set kursdaten = get_page(path="schule/kursdaten.md") -%}
+{% set kursdaten_split = macros::custom_coloring(s=kursdaten.content) | split(pat="
+<hr />") %}
+
+
+<h1 class="flex justify-center mt-10">Schwimmsportschule</h1>
+
+<section class="pt-5 bg-white">
+    <div class="w-full mx-auto lg:w-[75%] markdown">
+        <div class="px-4">
+            <h2 class="mt-10 mb-2">{{ kursangebot.title | trim }}</h2>
+            <div class="flex flex-wrap lg:flex-nowrap justify-between">
+                <div class="w-full lg:w-1/2">
+                    <div class="text-left mt-5">
+                        {{ kursangebot.content | safe }}
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-1/2">
+                    {% set kurse = load_data(path="content/schule/kursbeschreibung.yaml") %}
+                    <div class="space-y-4">
+                        {{ macros::course_accordion(courses=kurse.course) }}
+                    </div>
+                </div>
+            </div>
+
+
+            <hr class="border-t border-gray-300 my-8 w-full">
+
+            <div class="mx-auto w-full markdown">
+                <h2>Kursdaten</h2>
+                <div class="flex flex-wrap justify-center">
+                    <div class="w-full">
+                        <div class="text-left mt-5 markdown">
+                            {{kursdaten_split.0| safe}}
+                        </div>
+                    </div>
+
+                    <div class="w-full overflow-x-auto">
+                        <div class="">
+                            <!-- Kursdaten  Tabellen laufende Kurse-->
+                            <div class="markdown skg_kursdaten">
+                                {{ kursdaten_split.1 | safe }}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="mx-auto  mt-6 w-full markdown">
+                {{ kursdaten_split.2 | safe }}
+
+                {{ macros::kurse_time(data=load_data(path="/kurs23.csv")) }}
+
+                <div class="flex mt-6 justify-center items-center">
+                    <a class="block w-6/12 pt-4 pb-4 shadow-lg rounded-lg bg-blue-200 mb-5 text-2xl font-semibold text-center "
+                        href="schule/anmeldung"> zur Anmeldung </a>
+                </div>
+            </div>
+
+
+            <hr class="border-t border-gray-300 my-8 w-full justify-start">
+
+            <div class="flex flex-wrap gap-4">
+                <div class="w-full md:w-5/12">
+                    <div class="mt-5">
+                        {{ schule_split.1 | safe }}
+                    </div>
+                </div>
+                
+                <div class="w-full md:w-5/12">
+                    <div class="text-left mt-5">
+                        {{ schule_split.2 | safe }}
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="border-t border-gray-300 w-full">
+        </div>
+</section>
+
+<div class="pt-10 mb-0 pb-0 ">
+    <svg class="block" viewBox="0 0 200 6" transform="matrix(-1,0,0,1,0,0)">
+        <defs>
+            <pattern id="Wave3" x="0" y="0" width="100" height="6" patternUnits="userSpaceOnUse">
+                <path d="M0 6 0 2C20 5 39 7 55 3 71-1 87 0 100 2l0 4z" id="path4" fill="rgb(191 219 254)" />
+            </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#Wave3)" />
+    </svg>
+</div>
+</div>
+
+
+
+{% endblock %}

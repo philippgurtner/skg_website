@@ -1,4 +1,4 @@
-<!-- Top content -->
+{#<!-- Top content -->
 <!--
 <div class="relative flex flex-col justify-between">
   <div class="relative z-10 w-full">
@@ -16,7 +16,7 @@
     </svg>
   </div>
 </div>
--->
+-->#}
 
 
 
@@ -28,13 +28,15 @@
 	  </svg>
 	  <span class="ml-3 text-xl">Tailwind Snippets</span>
 	</a>-->
-  <img src="/images/base/logo_mit_schrift.jpg" class="max-h-[80px] md:max-h-[100px]"
+  <img src="{{ get_url(path='images/base/logo_mit_schrift.jpg') }}" class="max-h-[80px] md:max-h-[100px]"
         alt="Logo Schwimmklub Gelterkinden" />
+   <!--
+    <img src="{{ get_url(path='images/logo.png', relative=true) }}" alt="Logo">
+    <img src="../images/base/logo_mit_schrift.jpg" class="max-h-[80px] md:max-h-[100px]"
+    alt="Logo Schwimmklub Gelterkinden" />
+    --> 
 	<nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-	  <a class="mr-5 hover:text-gray-900">First Link</a>
-	  <a class="mr-5 hover:text-gray-900">Second Link</a>
-	  <a class="mr-5 hover:text-gray-900">Third Link</a>
-	  <a class="mr-5 hover:text-gray-900">Fourth Link</a>
+	  <a class="mr-5 hover:text-gray-900">Anmeldung</a>
 	</nav>
 	<!--<button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
 	  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
@@ -45,7 +47,7 @@
 </header>
 {# https://yqnn.github.io/svg-path-editor/ #}
 <div class="pt-0">
-  <svg viewBox="0 0 200 6" transform="matrix(1,0,0,-1,0,0)" width="100%">
+  <svg class="block" viewBox="0 0 200 6" transform="matrix(1,0,0,-1,0,0)" width="100%">
     <defs>
       <pattern id="Wave22" x="0" y="0" width="100" height="8" patternUnits="userSpaceOnUse">
         <path d="

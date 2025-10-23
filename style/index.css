@@ -97,6 +97,6 @@
   @apply block uppercase tracking-wide text-xs font-bold text-left mb-1;
 }
 .register_box{
-  @apply w-full shadow p-3 rounded border-0 bg-white focus:ring focus:outline-none;
+  @apply box-border shadow p-3 rounded border-0 bg-white focus:ring focus:outline-none w-full;
 }
   
