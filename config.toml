@@ -21,8 +21,8 @@ asset_prefix = "/skg_website"
 
 color_main="rgb(0 51 255)"
 
-formid      = "AKfycbw4zTJqZvnW2Bdlr_JFjNkEv0V_bof2PX2napPtKxYtbm44oy2_1fgrKhKPHghqrOEfaw"
-formlink    = "https://script.google.com/macros/s/AKfycbw4zTJqZvnW2Bdlr_JFjNkEv0V_bof2PX2napPtKxYtbm44oy2_1fgrKhKPHghqrOEfaw/exec"
+formid      = "AKfycbzbHXygxGZnrYj8nQTA1tiVUU9Z16L1yZHq4kFOi-8R9uzd7i2ZT5z07Yl8-m9tCJ3M8g"
+formlink    = "https://script.google.com/macros/s/AKfycbzbHXygxGZnrYj8nQTA1tiVUU9Z16L1yZHq4kFOi-8R9uzd7i2ZT5z07Yl8-m9tCJ3M8g/exec"
 
 
 wave =    '<svg  viewBox="0 0 200 15"> <defs> <pattern id="Wave" x="0" y="0" width="100" height="25" patternUnits="userSpaceOnUse" > <path d="M0 25 0 6C20 9 38 11 55 7 72 4 87 4 100 6l0 19z" id="path4" fill="#9eaffd"/> </pattern> </defs> <rect width="100%" height="100%" fill="url(#Wave)" /> </svg>'

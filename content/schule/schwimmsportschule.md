@@ -22,9 +22,9 @@ ____________________________________________
 <!-- Split, Weitere Informationen Links -->
 ## Weitere Informationen
 
-{{ pdf_button(text="AGB", link="https://skgelterkinden.ch/.cm4all/uproc.php/0/Daten_Schwimmschule/AGB_Schwimmsportschule.pdf" ,subtext="Schwimmsportschule", image="images/base/mime_pdf.png") }}
+{{ pdf_button(text="AGB", link="https://skgelterkinden.ch/.cm4all/uproc.php/0/Daten_Schwimmschule/AGB_Schwimmsportschule.pdf" ,subtext="Schwimmsportschule", image="/images/base/mime_pdf.png") }}
 
-{{ pdf_button(text="Spielregeln", link="https://skgelterkinden.ch/.cm4all/uproc.php/0/Spielregeln%20Schwimmsportschule%20Gelterkinden.pdf" ,subtext=" Schwimmsportschule", image="images/base/mime_pdf.png") }}
+{{ pdf_button(text="Spielregeln", link="https://skgelterkinden.ch/.cm4all/uproc.php/0/Spielregeln%20Schwimmsportschule%20Gelterkinden.pdf" ,subtext=" Schwimmsportschule", image="/images/base/mime_pdf.png") }}
 
 
 

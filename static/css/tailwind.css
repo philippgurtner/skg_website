@@ -96,6 +96,9 @@
 .mt-0 {
   margin-top: calc(var(--spacing, 0.25rem) * 0);
 }
+.mt-0\.5 {
+  margin-top: calc(var(--spacing, 0.25rem) * 0.5);
+}
 .mt-1 {
   margin-top: calc(var(--spacing, 0.25rem) * 1);
 }
@@ -140,6 +143,9 @@
 }
 .mb-0 {
   margin-bottom: calc(var(--spacing, 0.25rem) * 0);
+}
+.mb-0\.5 {
+  margin-bottom: calc(var(--spacing, 0.25rem) * 0.5);
 }
 .mb-1 {
   margin-bottom: calc(var(--spacing, 0.25rem) * 1);
@@ -281,6 +287,9 @@
 }
 .max-w-full {
   max-width: 100%;
+}
+.max-w-none {
+  max-width: none;
 }
 .max-w-screen-xl {
   max-width: var(--breakpoint-xl, 80rem);
@@ -666,10 +675,6 @@
 .font-semibold {
   --tw-font-weight: var(--font-weight-semibold, 600);
   font-weight: var(--font-weight-semibold, 600);
-}
-.tracking-wide {
-  --tw-tracking: var(--tracking-wide, 0.025em);
-  letter-spacing: var(--tracking-wide, 0.025em);
 }
 .tracking-widest {
   --tw-tracking: var(--tracking-widest, 0.1em);
@@ -1071,12 +1076,6 @@
     }
   }
 }
-.focus\:ring {
-  &:focus {
-    --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-}
 .focus\:outline-none {
   &:focus {
     --tw-outline-style: none;
@@ -1253,15 +1252,6 @@
       --tw-space-y-reverse: 0;
       margin-block-start: calc(calc(var(--spacing, 0.25rem) * 0) * var(--tw-space-y-reverse));
       margin-block-end: calc(calc(var(--spacing, 0.25rem) * 0) * calc(1 - var(--tw-space-y-reverse)));
-    }
-  }
-}
-.md\:space-x-6 {
-  @media (width >= 48rem) {
-    :where(& > :not(:last-child)) {
-      --tw-space-x-reverse: 0;
-      margin-inline-start: calc(calc(var(--spacing, 0.25rem) * 6) * var(--tw-space-x-reverse));
-      margin-inline-end: calc(calc(var(--spacing, 0.25rem) * 6) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
 }
@@ -1445,6 +1435,21 @@
     color: var(--color-red-400, oklch(70.4% 0.191 22.216));
   }
 }
+.\[\&_li\]\:my-0\.5 {
+  & li {
+    margin-block: calc(var(--spacing, 0.25rem) * 0.5);
+  }
+}
+.\[\&\>p\]\:my-1 {
+  &>p {
+    margin-block: calc(var(--spacing, 0.25rem) * 1);
+  }
+}
+.\[\&\>ul\]\:my-1 {
+  &>ul {
+    margin-block: calc(var(--spacing, 0.25rem) * 1);
+  }
+}
 @layer components {
   .btn-primary {
     border-radius: var(--radius-lg, 0.5rem);
@@ -1582,27 +1587,40 @@
   margin-bottom: calc(var(--spacing, 0.25rem) * 1);
   display: block;
   text-align: left;
+  font-size: var(--text-base, 1rem);
+  line-height: var(--tw-leading, var(--text-base--line-height, calc(1.5 / 1)));
   font-size: var(--text-xs, 0.75rem);
   line-height: var(--tw-leading, var(--text-xs--line-height, calc(1 / 0.75)));
   --tw-font-weight: var(--font-weight-bold, 700);
   font-weight: var(--font-weight-bold, 700);
-  --tw-tracking: var(--tracking-wide, 0.025em);
-  letter-spacing: var(--tracking-wide, 0.025em);
-  text-transform: uppercase;
 }
 .register_box {
   box-sizing: border-box;
   width: 100%;
-  border-radius: 0.25rem;
+  border-radius: var(--radius-lg, 0.5rem);
   border-style: var(--tw-border-style);
-  border-width: 0px;
-  background-color: var(--color-white, #fff);
+  border-width: 1px;
+  border-color: var(--color-gray-200, oklch(92.8% 0.006 264.531));
+  background-color: var(--color-gray-100, oklch(96.7% 0.003 264.542));
   padding: calc(var(--spacing, 0.25rem) * 3);
-  --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+  --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function, cubic-bezier(0.4, 0, 0.2, 1)));
+  transition-duration: var(--tw-duration, var(--default-transition-duration, 150ms));
   &:focus {
-    --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+    border-color: var(--color-indigo-500, oklch(58.5% 0.233 277.117));
+  }
+  &:focus {
+    --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  &:focus {
+    --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  &:focus {
+    --tw-ring-color: var(--color-indigo-500, oklch(58.5% 0.233 277.117));
   }
   &:focus {
     --tw-outline-style: none;
@@ -1769,11 +1787,6 @@
   inherits: false;
   initial-value: 1;
 }
-@property --tw-space-x-reverse {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -1812,7 +1825,6 @@
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
-      --tw-space-x-reverse: 0;
     }
   }
 }

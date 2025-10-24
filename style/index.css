@@ -94,9 +94,11 @@
 
 
 .register_label{
-  @apply block uppercase tracking-wide text-xs font-bold text-left mb-1;
+  @apply block text-base font-bold text-xs font-bold text-left mb-1;
 }
 .register_box{
-  @apply box-border shadow p-3 rounded border-0 bg-white focus:ring focus:outline-none w-full;
+  @apply box-border p-3 rounded-lg border border-gray-200 bg-gray-100 
+  shadow-md focus:shadow-lg focus:ring-2 focus:ring-indigo-500 
+  focus:outline-none focus:border-indigo-500 w-full transition;
 }
   

@@ -89,7 +89,7 @@
 <div class="flex flex-wrap">
   {% for course in courses %}
   <details class="basis-5/12 lg:basis-5/12 open:basis-full m-1  border-blue-400 px-4 py-2 shadow-inner rounded-lg overflow-hidden">
-    <summary class="flex items-center justify-between text-lg py-2 cursor-pointer break-words bg-amber-300">
+    <summary class="flex items-center justify-between text-lg py-2 cursor-pointer break-words">
       <span>{{ course.badge }}</span>
       <svg class="w-5 h-5 transition-transform duration-200 group-open:rotate-180"
       fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -97,17 +97,20 @@
       d="M19 9l-7 7-7-7" />
     </svg>
   </summary>
-  <div class=" break-words bg-red-500">
-    <h4 class="font-semibold">Thema:</h4>
-    <p>{{ course.thema }}</p>
-    <h4 class="font-semibold">Inhalte:</h4>
-    <ul class="list-disc pl-5">
+  <div class=" break-words">
+    <h4 class="font-semibold mb-0.5">Thema:</h4>
+    <p class="mt-0.5">{{ course.thema }}</p>
+    <h4 class="font-semibold mb-0.5">Inhalte:</h4>
+    {#<ul class="list-disc pl-5">
       {% for i in course.inhalte %}
       <li class="break-words">{{ i }}</li>
       {% endfor %}
-    </ul>
-    <h4 class="font-semibold">Voraussetzungen:</h4>
-    <p>{{ course.voraussetzungen }}</p>
+    </ul>#}
+    <div class="prose prose-invert max-w-none [&>p]:my-1 [&>ul]:my-1 [&_li]:my-0.5">
+      {{ course.inhalte | markdown | safe }}
+    </div>
+    <h4 class="font-semibold mb-0.5">Voraussetzungen:</h4>
+    <p class="mt-0.5">{{ course.voraussetzungen }}</p>
   </div>
 </details>
 {% endfor %}

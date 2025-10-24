@@ -14,93 +14,92 @@
       <form id={{ config.extra.formid }} method="POST" action={{ config.extra.formlink }}>
         <div class="md:flex mb-8">
           <div class="md:w-1/3">
-            <legend class="uppercase tracking-wide text-lg">Angaben Kind</legend>
+            <legend class="uppercase font-bold text-lg">Angaben Kind</legend>
           </div>
           <div class="md:flex-1 mt-2 mb:mt-0 md:px-3">
             <div class="md:flex mb-4 space-y-3 md:space-y-0">
               <div class="md:flex-1 md:pr-3">
                 <label class="register_label">Vorname Kind *</label>
-                <input class="register_box " type="text" id="vorname_kind" name="vorname_kind">
+                <input class="register_box " type="text" id="vorname_kind" name="vorname_kind" required>
               </div>
               <div class="md:flex-1 md:pl-3">
                 <label class="register_label" for="nachname_kind">Nachname Kind *</label>
-                <input class="register_box" type="text" id="nachname_kind" name="nachname_kind">
+                <input class="register_box" type="text" id="nachname_kind" name="nachname_kind" required>
               </div>
             </div>
             <div class="mb-4">
               <label class="register_label" for="str_kind">Strasse, Nr. *</label>
-              <input class="register_box" type="text" id="str_kind" name="str_kind">
+              <input class="register_box" type="text" id="str_kind" name="str_kind" required>
             </div>
             <div class="md:flex mb-4 space-y-3 md:space-y-0">
               <div class="md:flex-1 md:pr-3">
                 <label class="register_label" for="plz_kind">PLZ *</label></td>
-                <input class="register_box" type="text" id="plz_kind" name="plz_kind">
+                <input class="register_box" type="text" id="plz_kind" name="plz_kind" required>
               </div>
               <div class="md:flex-1 md:pl-3">
                 <label class="register_label" for="ort_kind">Ort *</label>
-                <input class="register_box" type="text" id="ort_kind" name="ort_kind">
+                <input class="register_box" type="text" id="ort_kind" name="ort_kind" required>
               </div>
             </div>
             <div class="mb-4">
               <label class="register_label" for="geburtsdatum_kind">Geburtsdatum Kind *</label>
-              <input class="register_box" type="date" placeholder="dd-mm-yyyy" id="geburtsdatum_kind"
-                name="geburtsdatum_kind">
+              <input class="register_box" type="date" placeholder="dd-mm-yyyy" id="geburtsdatum_kind" name="geburtsdatum_kind" required>
             </div>
             <div class="mb-4">
               <label class="register_label" for="ahv_kind">AHV Nr. Kind * (für J&S Anmeldung)</label>
-              <input class="register_box" type="text" id="ahv_kind" name="ahv_kind" , placeholder="756.xxxx.xxxx.xx">
+              <input class="register_box" type="text" id="ahv_kind" name="ahv_kind" , placeholder="756.xxxx.xxxx.xx" required>
             </div>
           </div>
         </div>
         <div class="md:flex mb-8">
           <div class="md:w-1/3 mb-5">
-            <legend class="uppercase tracking-wide text-lg">Rechnungsempfänger</legend>
+            <legend class="uppercase font-bold text-lg">Rechnungsempfänger</legend>
           </div>
           <div class="md:flex-1 mt-2 mb:mt-0 md:px-3">
             <div class="mb-4">
-              <label class="register_label" for="anrede_rechnung">Anrede *</label>
+              <label class="register_label" for="anrede_rechnung">Anrede</label>
               <input class="register_box" type="text" id="anrede_rechnung" name="anrede_rechnung">
             </div>
             <div class="md:flex mb-4 space-y-3 md:space-y-0">
               <div class="md:flex-1 md:pr-3">
                 <label class="register_label" for="vorname_rechnung">Vorname *</label>
-                <input class="register_box" type="text" id="vorname_rechnung" name="vorname_rechnung">
+                <input class="register_box" type="text" id="vorname_rechnung" name="vorname_rechnung" required>
               </div>
               <div class="md:flex-1 md:pl-3">
                 <label class="register_label" for="nachname_rechnung">Nachname *</label>
-                <input class="register_box" type="text" id="nachname_rechnung" name="nachname_rechnung">
+                <input class="register_box" type="text" id="nachname_rechnung" name="nachname_rechnung" required>
               </div>
             </div>
             <div class="mb-4">
               <label class="register_label" for="tel_rechnung">Telefon *</label>
-              <input class="register_box" type="tel" id="tel_rechnung" name="tel_rechnung">
+              <input class="register_box" type="tel" id="tel_rechnung" name="tel_rechnung" required>
             </div>
             <div class="mb-4">
               <label class="register_label" for="email_rechnung">E-Mail *</label>
-              <input class="register_box" type="email" id="email_rechnung" name="email_rechnung">
+              <input class="register_box" type="email" id="email_rechnung" name="email_rechnung" required>
             </div>
           </div>
         </div>
         <div class="md:flex mb-8">
           <div class="md:w-1/3">
-            <legend class="uppercase tracking-wide text-lg">Kursangaben</legend>
+            <legend class="uppercase font-bold text-lg">Kursangaben</legend>
           </div>
           <div class="md:flex-1 mt-2 mb:mt-0 md:px-3">
             <div class="md:flex mb-4 space-y-3 md:space-y-0">
               <div class="md:flex-1 md:pr-3">
                 <label class="register_label" for="kurs_prio1">Kurs 1. Prio *</label>
-                <select class="register_box" name="prio1" id="kurs_prio1"> {{
+                <select class="register_box" name="prio1" id="kurs_prio1" required> {{
                   macros::kurse_select(data=load_data(path="/kurs23.csv")) }} </select>
               </div>
               <div class="md:flex-1 md:pl-3">
                 <label class="register_label" for="kurs_prio2">Kurs 2. Prio *</label>
-                <select class="register_box" name="prio2" id="kurs_prio2"> {{
+                <select class="register_box" name="prio2" id="kurs_prio2" required> {{
                   macros::kurse_select(data=load_data(path="/kurs23.csv")) }} </select>
               </div>
             </div>
             <div class="mb-4">
               <label class="register_label" for="level_achieved">Zuvor absolviertes Kurslevel *</label>
-              <select class="register_box" name="level_achieved" id="level_achieved">
+              <select class="register_box" name="level_achieved" id="level_achieved" required>
                 <option value="-"> neu </option>
                 <option value="1"> Level 1 </option>
                 <option value="2"> Level 2 </option>
@@ -118,7 +117,7 @@
             </div>
             <div class="mb-4">
               <label class="register_label" for="sibling">Geschwister ebenfalls in einem Schwimmkurs? *</label>
-              <input class="register_box" type="text" id="sibling" name="sibling" , placeholder="Ja + Name / Nein">
+              <input class="register_box" type="text" id="sibling" name="sibling" , placeholder="Ja + Name / Nein" required>
             </div>
             <div class="mb-4">
               <label class="register_label" for="notes">Bemerkungen</label>
