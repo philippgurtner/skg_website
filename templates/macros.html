@@ -220,14 +220,14 @@ bg-amber-300
 
     {# Sort arrays by weekday and time #}
 
-    {% set level1_sorted = level1 | sort(attribute="5") | sort(attribute="3") %}        {# 5: day in week, 3: time#}
-    {% set level2_sorted = level2 | sort(attribute="5") | sort(attribute="3") %}
-    {% set level3_sorted = level3 | sort(attribute="5") | sort(attribute="3") %}
-    {% set level4_sorted = level4 | sort(attribute="5") | sort(attribute="3") %}
-    {% set level5_sorted = level5 | sort(attribute="5") | sort(attribute="3") %}
-    {% set level6_sorted = level6 | sort(attribute="5") | sort(attribute="3") %}
-    {% set level7_sorted = level7 | sort(attribute="5") | sort(attribute="3") %}
-    {% set level8_sorted = level8 | sort(attribute="5") | sort(attribute="3") %}
+    {% set level1_sorted = level1 | sort(attribute="3") | sort(attribute="5") %}        {# 5: day in week, 3: time#}
+    {% set level2_sorted = level2 | sort(attribute="3") | sort(attribute="5") %}
+    {% set level3_sorted = level3 | sort(attribute="3") | sort(attribute="5") %}
+    {% set level4_sorted = level4 | sort(attribute="3") | sort(attribute="5") %}
+    {% set level5_sorted = level5 | sort(attribute="3") | sort(attribute="5") %}
+    {% set level6_sorted = level6 | sort(attribute="3") | sort(attribute="5") %}
+    {% set level7_sorted = level7 | sort(attribute="3") | sort(attribute="5") %}
+    {% set level8_sorted = level8 | sort(attribute="3") | sort(attribute="5") %}
 
     {# Add more sorted arrays for additional levels #}
 
