@@ -8,7 +8,7 @@ render=false
 <!-- Split.0 , Text 1 Kursdaten -->
 <!--{# ### Nächste Kursperioden #}-->
 
-§r§ **Anmeldungen ab 7. November möglich** §!§
+§r§ **Anmeldungen ab 2. November möglich** §!§
 ___________________________________________
 <!-- Split.1 , Tabelle (in Box) -->
 
@@ -59,7 +59,7 @@ ____________________________________________
 <!-- Split.2 , Text Anmeldung / Kursdaten -->
 
 ## Anmeldung
-Die Folgenden Kurse werden im Herbst 2024 Angeboten:\
-<span class="text-red-700 line-through">Gestrichene</span> Daten sind schon ausgebucht. 
+Die folgenden Kurse werden im Winter 2025 angeboten:\
+<span class="text-red-700 line-through">gestrichene</span> Daten sind schon ausgebucht. 
 
 <!-- Wird automatisch eingefügt: Daten aller Kursanlässe -->
