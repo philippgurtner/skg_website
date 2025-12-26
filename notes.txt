@@ -107,3 +107,14 @@ https://dev.to/seppegadeyne/crafting-a-mobile-menu-with-tailwind-css-without-jav
                 </div>
             </div>
         </div>
+
+
+| Ziel                           | Zola-Funktion                                           |
+| ------------------------------ | ------------------------------------------------------- |
+| Immer absolut zur Domain       | `{{ get_url(path='...', relative=false) }}` *(default)* |
+| Relativ zum aktuellen Dokument | `{{ get_url(path='...', relative=true) }}`              |
+| Custom Alias wie `@/`          | eigenes Makro mit `get_url(relative=true)`              |
+
+
+Form Backend:
+https://formbee.dev/home
