@@ -37,7 +37,7 @@ ___________________________________________
 
 <hr class="border-t border-gray-300 my-8 w-full justify-start">
 
-#### Daten nächste Kurse: Frühling 25/26
+#### Daten nächste Kurse: Frühling 26
 <!-- Tabelle Kursdaten -->
 
 <!--
