@@ -24,6 +24,7 @@ course:
          Sprung/ Wassergewöhnung
             - Freier Sprung vom Bassinrand auf die Füsse zum sofortigen, vollständigen Untertauchen.
       voraussetzungen: "keine"
+      link: swimsports.ch/krebs
 
    -  level: "2"
       badge: "Seepferd"
@@ -49,6 +50,8 @@ course:
             - Standtiefes Wasser für die helfende Person; Tiefwasser für die Ausführenden
             - Fusssprung in tiefes Wasser zum Untertauchen. (Hilfsperson steht im Wasser.)
       voraussetzungen: "Vorkenntnisse aus dem Krebs (Kurs 1)"
+      link: swimsports.ch/seepferd
+
    
    -  level: "3"
       badge: "Frosch"
@@ -74,6 +77,7 @@ course:
             - Tiefwasser
             - Rolle / Purzelbaum vorwärts vom Bassinrand in tiefes Wasser.
       voraussetzungen: "Vorkenntnisse aus dem Seepferd (Kurs 2)"
+      link: swimsports.ch/frosch
    
    -  level: "4"
       badge: "Pinguin"
@@ -99,6 +103,7 @@ course:
          - Tiefwasser
          - 15–25 m Fortbewegung in Rückenlage, Wechselbeinschlag und Armantrieb mit Rückholphase der Arme ausserhalb des Wassers.
       voraussetzungen: "Vorkenntnisse aus dem Frosch (Kurs 3)"
+      link: swimsports.ch/pinguin
    
    -  level: "5"
       badge: "Tintenfisch"
@@ -124,6 +129,7 @@ course:
             - Angemessene Wassertiefe je nach Körpergrösse (Empfohlen: mindestens 1,50 m)
             - Eintauchen kopfwärts aus Hocke oder Stand mit anschliessendem Gleiten gegen den Boden.
       voraussetzungen: "Vorkenntnisse aus dem Pinguin (Kurs 4)"
+      link: swimsports.ch/tintenfisch
 
    -  level: "6"
       badge: "Krokodil"
@@ -148,6 +154,7 @@ course:
             - Tiefwasser
             - Je 10 - 15 m Gleichschlag der Beine (Schwung-/Stossbewegung der Unterschenkel mit auswärts gedrehten Füssen) in Rücken- und in Bauchlage, die Armhaltung ist frei wählbar.
       voraussetzungen: "Vorkenntnisse aus dem Tintenfisch (Kurs 5)"
+      link:    swimsports.ch/krokodil
 
    -  level: "7"
       badge: "Eisbär"
@@ -172,9 +179,10 @@ course:
                - 1 Minute an Ort über Wasser halten (in Rückenlage schwebend oder mit Wasserstampfen oder Wechselbeinschlag)
                - 50 m schwimmen
       voraussetzungen: "Vorkenntnisse aus dem Krokodil (Kurs 6)"
+      link: swimsports.ch/eisbaer
 
    -  level: "8"
-      badge: "Walfisch"
+      badge: "Wal"
       thema: "Rücken-, Brust- und Kraulschwimmen weiter vertiefen"
       inhalte: >
          16-25m Kraul mit Hüfte anheben
@@ -217,3 +225,4 @@ course:
             - Unter Wasser abstossen mit anschliessender Gleitphase
             - Einatmen erst nach 2-3 Armzügen
       voraussetzungen: "Vorkenntnisse aus dem Eisbär (Kurs 7)"
+      link: swimsports.ch/wal
