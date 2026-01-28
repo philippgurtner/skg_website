@@ -35,7 +35,6 @@ ____________________________________________
 
 Nehmen Sie mit uns Kontakt auf:
 
-Sara Bader\
 Schwimmsportschule Gelterkinden
 
 Fragen betreffend Kurse der Schwimmsportschule an:\
