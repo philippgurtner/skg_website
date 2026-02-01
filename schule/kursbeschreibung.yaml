@@ -1,0 +1,219 @@
+# Kursfile für die Beschreibung der Kurse
+# es muss folgende Form haben
+# styles: course, plain # TODO 
+
+course:
+   -  level: "1"
+      badge: "Krebs"
+      thema: "Wassergewöhnung"
+      inhalte: |
+         Standtiefes Wasser
+            - Stehend minimal 3 Sek. mit angehaltenem Atem vollständig untertauchen, über Wasser ausatmen. 
+         
+         Sprudelbad/ Wassergewöhnung
+            - Standtiefes Wasser
+            - Stehend minimal 3 Sek. vollständig untertauchen mit sichtbarem Ausatmen durch Mund und/oder Nase unter Wasser.
+         
+         Flugzeug/ Wassergewöhnung
+            - Standtiefes Wasser
+            - Minimal 3 Sek. schweben in Bauchlage mit korrekter Kopfhaltung, Arme in Seithalte. 
+         
+         Bauchpfeil/ Basiskompetenz
+            - Von der Wand oder der Treppe abstossen und während minimal 3 Sek. in Bauchlage selbständig gleiten (ohne Beinschlag). Das Gesicht liegt im Wasser, Arme in Hochhalte
+         
+         Sprung/ Wassergewöhnung
+            - Freier Sprung vom Bassinrand auf die Füsse zum sofortigen, vollständigen Untertauchen.
+      voraussetzungen: "keine"
+
+   -  level: "2"
+      badge: "Seepferd"
+      thema: "Gleiten, Beinschlag, Sprung ins Wasser"
+      inhalte: >
+         Fischauge/ Wassergewöhnung
+            - Standtiefes Wasser
+            - Untertauchen, Augen öffnen und erkennen eines Gegenstandes, einer Zahl oder einer Farbe unter Wasser. 
+            
+         Luftpumpe/Wassergewöhnung
+            - Standtiefes Wasser
+            - Stehend: Einatmen, untertauchen und vollständig unter Wasser ausatmen. Die Übung ist ohne Unterbruch und ohne Augen zu reiben viermal auszuführen. Ziel: gleichmässiger Atemrhythmus. 
+         
+         Seerose/ Wassergewöhnung
+            - Standtiefes Wasser
+            - Minimal 5 Sek. schweben in Rückenlage, Arme in Seit- bis Hochhalte.
+
+         Bauchpfeil mit Beinmotor/Basiskompetenz
+            - Standtiefes Wasser
+            - Gleiten über minimal 2 m in Bauchlage aus Abstossen vom Rand oder vom Boden ohne Antrieb, Arme in Hochhalte. Anschliessend nochmals 2 m mit Beinantrieb.
+
+         Froschsprung/ Wassergewöhnung
+            - Standtiefes Wasser für die helfende Person; Tiefwasser für die Ausführenden
+            - Fusssprung in tiefes Wasser zum Untertauchen. (Hilfsperson steht im Wasser.)
+      voraussetzungen: "Vorkenntnisse aus dem Krebs (Kurs 1)"
+   
+   -  level: "3"
+      badge: "Frosch"
+      thema: "Beinschlag, Rückenschwimmen"
+      inhalte: >
+         Motorboot/ Basiskompetenz
+            - Schultertiefes Wasser
+            - Aus Abstossen vom Rand minimal 5 Sek. gleiten in Bauchlage an der Wasseroberfläche mit korrekter Kopfhaltung und sichtbarer Ausatmung.
+         
+         Rückenpfeil/ Basiskompetenz
+            - Schultertiefes Wasser
+            - Gleiten während mindestens 5 Sek. in Rückenlage aus Abstossen vom Rand oder vom Boden, Arme in Hochhalte.
+         
+         Seehund- Schwimmen in Rückenlage/ Antriebskompetenz
+            - Tiefwasser
+            - 8 m Wechselbeinschlag in Rückenlage, Hände können seitlich neben dem Körper im Wasser paddeln oder Arme in Hochhalte.
+         
+         Seehund- Schwimmen in Bauchlage/ Antriebskompetenz
+            - Tiefwasser
+            - 8 m Wechselbeinschlag in Bauchlage, Hände können seitlich neben dem Körper im Wasser paddeln oder Arme in Hochhalte. Eine Antriebsbewegung der Arme z.B. "Raddampfer" unterstützt das Einatmen.
+         
+         Purzelbaum/ Wassergewöhnung
+            - Tiefwasser
+            - Rolle / Purzelbaum vorwärts vom Bassinrand in tiefes Wasser.
+      voraussetzungen: "Vorkenntnisse aus dem Seepferd (Kurs 2)"
+   
+   -  level: "4"
+      badge: "Pinguin"
+      thema: "Rücken-, Kraulschwimmen, Rolle vorwärts"
+      inhalte: >
+        Handstand/ Wassergewöhnung
+         - Hüft- bis brusttiefes Wasser
+         - Aus dem Stand : Handstand zum anschliessenden Abrollen vorwärts und sichtbarem Ausatmen durch die Nase.
+         
+         Tunneltauchen/ Basiskompetenz
+         - Schultertiefes Wasser
+         - Abtauchen, abstossen von der Wand, durch einen vollständig im Wasser stehenden Reifen gleiten (ohne Antriebsbewegungen).
+         
+         Superman/ Antriebskompetenz
+         - Schultertiefes Wasser
+         - Aus Abstossen: 10 - 15 m Wechselbeinschlag in Bauchlage mit einem Arm in Hochhalte. Drehung von der Bauch- in die Seitenlage zum Einatmen. Anschliessend wieder in Bauchlage drehen zum Ausatmen. Mindestens 3 x hintereinander ausführen.
+         
+         Eisbärschwimmen/ Antriebskompetenz
+         - Tiefwasser
+         - 10 - 15 m Fortbewegung in Bauchlage, Wechselbeinschlag und Armantrieb mit «Paddelbewegungen» vor dem Kopf, mit ausatmen ins Wasser. Die Arme gleiten unter Wasser nach vorne und ziehen wieder nach hinten bis unter die Schultern.
+         
+         Rückenschwimmen/ Bewegungskompetenz
+         - Tiefwasser
+         - 15–25 m Fortbewegung in Rückenlage, Wechselbeinschlag und Armantrieb mit Rückholphase der Arme ausserhalb des Wassers.
+      voraussetzungen: "Vorkenntnisse aus dem Frosch (Kurs 3)"
+   
+   -  level: "5"
+      badge: "Tintenfisch"
+      thema: "Beinschlag, Rückenschwimmen"
+      inhalte: >
+         Haifisch/ Antriebskompetenz
+            - Tiefwasser
+            - 15–20 m Wechselbeinschlag in Bauchlage, ein Arm in Hochhalte, der andere Arm am Körper seitlich angelegt: Ausatmen ins Wasser, Einatmen mit Rollen über den gestreckten Arm und gleichzeitigem Hochziehen des Ellbogens des angelegten Armes, danach Arm senken, Kopf drehen und ausatmen.
+         
+         Slalom/ Antriebskompetenz
+            - Schultertiefes Wasser
+            - Unter Wasser von der Wand abstossen und 5 m tauchen mit Wechselbeinschlag und Brustarmzug durch zwei seitlich versetzt stehende Reifen hindurch.
+         
+         Baumstamm-Rollen/ Antriebskompetenz
+            - Tiefwasser
+            - Aus Abstossen: Mit Wechselbeinschlag 15 m «Baumstammrollen» mit je zwei Drehungen von der Rücken- in die Bauchlage und von der Bauch- in die Rückenlage, die Arme bleiben während der gesamten Übung in Hochhalte gestreckt
+         
+         Schraubenkraul/ Bewegungskompetenz
+            - Tiefwasser
+            - 25 m Fortbewegung: 5–8 m Wechselbeinschlag und Wechselzug der Arme mit Unter- und Überwasserphase in Bauchlage mit Seitenatmung; unmittelbar anschliessend 5–8 m in Rückenlage, gestreckte Arme in der Überwasserphase, regelmässiger Armzug, usw.
+         
+         Köpfler/ Sportartenspezifische Kompetenz
+            - Angemessene Wassertiefe je nach Körpergrösse (Empfohlen: mindestens 1,50 m)
+            - Eintauchen kopfwärts aus Hocke oder Stand mit anschliessendem Gleiten gegen den Boden.
+      voraussetzungen: "Vorkenntnisse aus dem Pinguin (Kurs 4)"
+
+   -  level: "6"
+      badge: "Krokodil"
+      thema: "Kraul, Rückenkraul, Start"
+      inhalte: >
+         Kraul (ganze Lage)/ Bewegungskompetenz
+            - Tiefwasser
+            - 15 m Wechselbeinschlag und Wechselzug der Arme mit Unter- und Überwasserphase, in Bauchlage, mit korrekter Seitenatmung.
+
+         Scheibenwischer/ Antriebskompetenz
+            - Aus Abstossen: 5–8 m Fortbewegung ausschliesslich mit Armantrieb; die Ellbogen zeigen nach aussen, Antrieb mit Ein- und Auswärtsbewegungen der Unterarme/Hände unter dem Oberkörper. Das Gesicht liegt mit korrekter Kopfhaltung im Wasser (kein «Brustarmzug», kein Beinantrieb).
+
+         Kraul-Brust-Mix/ Bewegungskompetenz
+            - Tiefwasser
+            - 20–30 m Fortbewegung in Bauchlage, Wechselbeinschlag kombiniert mit Brustarmzug und regelmässiger Atmung nach vorne bei jedem Zug.
+
+         Wasserstampfen/ Antriebskompetenz
+            - Tiefwasser
+            - Während 30 Sek. aufrecht im Tiefwasser mit auswärts gedrehten Flex-Füssen (zum Fussrist hin gebeugte Füsse) seitwärts nach unten stossen. Arme können helfend eingesetzt werden (z.B. paddeln).
+
+         Entenfüsse/ Antriebskompetenz
+            - Tiefwasser
+            - Je 10 - 15 m Gleichschlag der Beine (Schwung-/Stossbewegung der Unterschenkel mit auswärts gedrehten Füssen) in Rücken- und in Bauchlage, die Armhaltung ist frei wählbar.
+      voraussetzungen: "Vorkenntnisse aus dem Tintenfisch (Kurs 5)"
+
+   -  level: "7"
+      badge: "Eisbär"
+      thema: "Brustbeinschlag, Delfinbewegung, Kraul"
+      inhalte: >
+         Tauchwende/ Bewegungskompetenz
+            - Schultertiefes Wasser
+            - Aus Stand: Aus 5 m Entfernung zur Wand tauchen, unter Wasser wenden und nach 2 m einen Tauchgegenstand vom Boden heraufholen.
+
+         Delfin/ Antriebskompetenz
+            - Schultertiefes Wasser
+            - Aus Abstossen Delfinkörperbewegungen über eine Distanz von minimal 4 – 6 m mit deutlich sichtbarem Impuls aus Kopf/Schultern ausführen (keine Delfinsprünge, Beine bleiben locker). Arme in Hochhalte oder am Körper angelegt.
+
+         Brust/ Bewegungskompetenz
+            - Tiefwasser
+            - 16–25 m Brust ganze Lage. Antriebswirksame Schwung- / Stossbewegung der Beine, Armzug mit angewinkelten Armen während der Zugphase. Korrekte Koordination Armzug – Atmung. Sichtbares Ausatmen ins Wasser.
+
+         Wasser-Sicherheits-Check WSC
+            - Tiefwasser
+            - Folgende 3 Übungen sind direkt nacheinander 2x und ohne Pause zu absolvieren:
+               - Vom Rand, Rolle / purzeln in tiefes Wasser (der Kopf muss vollständig untertauchen)
+               - 1 Minute an Ort über Wasser halten (in Rückenlage schwebend oder mit Wasserstampfen oder Wechselbeinschlag)
+               - 50 m schwimmen
+      voraussetzungen: "Vorkenntnisse aus dem Krokodil (Kurs 6)"
+
+   -  level: "8"
+      badge: "Walfisch"
+      thema: "Rücken-, Brust- und Kraulschwimmen weiter vertiefen"
+      inhalte: >
+         16-25m Kraul mit Hüfte anheben
+
+            - Bei jedem Eintauchen der Hand aktives Anheben der Hüfte
+            - Kontinuierlicher Bewegungsablauf
+            - Exakte Kopplung Arme- Hüfte anheben
+            - Passive Beine
+
+         16-25m Superman- Rücken
+            - Gestreckte Rückenlage
+            - Regelmässiger Beinschlag
+            - Gleichzeitiger Armwechsel auf 6-8 Beinschläge
+            - In der Ruheposition der Arme, ein Arm in Hochhalte,  der andere am Körper angelegt
+         
+         Brustbeinschlag in Rückenlage
+            - Bewegungseffizienz
+            - Korrekte Beinposition vor der Schwung- Stossbewegung
+            - Sichtbare Gleitphase
+            - Max 10 Beinschläge auf 15m
+
+         16-25m Superman- Kraul
+            - Regelmässiger Beinschlag
+            - Korrekte Kopfhaltung
+            - Sichtbares, stetiges Ausatmen während den 6-8 Beinschlägen
+
+         50m Wechselschlagschwimmen
+            - Kontinuierliche Bewegungen ohne Pause
+            - Rücken: Gestreckte Arme in der Rückholphase
+            - Armzug bis zu den Oberschenkeln
+            - Kraul: 3er Atmung
+
+         Start Kraul
+            - Dynamischer Sprung
+            - Hände und Kopf tauchen zuerst ein
+            - Gleitphase in gestreckter Körperposition
+
+         Kippwende Kraul
+            - Dynamisches Kippen sowie Anhocken der Beine
+            - Unter Wasser abstossen mit anschliessender Gleitphase
+            - Einatmen erst nach 2-3 Armzügen
+      voraussetzungen: "Vorkenntnisse aus dem Eisbär (Kurs 7)"
