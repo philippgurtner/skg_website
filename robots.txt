@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://philippgurtner.github.io/skg_website/sitemap.xml
