@@ -1,7 +1,7 @@
 +++
 title = "Anmeldung Schwimmsportschule"
 template = "subpages/anmeldung.html"
-render = true
+render = false    # muss wieder aktiviert werden !!
 +++
 
 Wir freuen uns über Ihre Anmeldung.
